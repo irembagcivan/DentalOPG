@@ -155,8 +155,8 @@ Düşük kontrast ve gürültü sorunlarını gidermek için görüntülere sır
 - [x] **Boş etiketli dosyaların izole edilmesi:** 22 dosya karantinaya alındı
 - [x] **Ön işleme:** CLAHE, gürültü azaltma ve hafif keskinleştirme uygulandı
 - [x] **Ön işlemenin görsel doğrulaması:** Lezyon kırpmalarıyla orijinal ve işlenmiş görüntüler karşılaştırıldı
-- [ ] **Aşırı bulanık / gürültülü görüntülerin değerlendirilmesi:** Laplacian eşiklerine göre eğitim setinden çıkarılıp çıkarılmayacağına karar verilmesi
-- [ ] **Ön işlemenin model üzerindeki etkisinin ölçülmesi:** Orijinal ve işlenmiş veriyle aynı ayarlarda kısa YOLOv8 eğitimleri yapılıp sınıf bazlı (özellikle Caries) mAP karşılaştırılması
+- [x] **Aşırı bulanık / gürültülü görüntülerin değerlendirilmesi:** Laplacian eşiklerine göre eğitim setinden çıkarılıp çıkarılmayacağına karar verilmesi
+- [x] **Ön işlemenin model üzerindeki etkisinin ölçülmesi:** Orijinal ve işlenmiş veriyle aynı ayarlarda kısa YOLOv8 eğitimleri yapılıp sınıf bazlı (özellikle Caries) mAP karşılaştırılması
 - [ ] **SAM ile maske üretimi:** Bbox koordinatlarının SAM'e ipucu olarak verilip U-Net eğitimi için çok sınıflı (multi-class) ve ikili (binary) maskelerin otomatik üretilmesi
 - [ ] **Model eğitimi:** YOLOv8 ve U-Net eğitimi
 - [ ] **Değerlendirme:** Sonuçların yorumlanması
