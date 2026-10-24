@@ -47,7 +47,6 @@ train,16747_Shefali-Deb-Nath-18Y_Panorama_20240902141058_bmp_jpg.rf.ee7fc3aea9b9
 train,6350_Parveen-Akther-39Y_Panorama_20241219140801_bmp_jpg.rf.63731eff84d193cd1aa9e33b9d239d08.jpg,82.77,106.52,59.04,2,NORMAL
 train,19196_Sukonti-30y_Panorama_20240920113840_bmp_jpg.rf.879f15b78ccb8ebbaa77e38b3eba85c2.jpg,39.45,56.46,37.18,1,NORMAL
 train,21741_Jhunu-25Y_Panorama_20241005180846_bmp_jpg.rf.4c1c358e7b3a4d31ffb390f1895c54ce.jpg,58.35,103.58,51.61,2,NORMAL
-train,17453_Panna-28Y_Panorama_20240907122544_bmp_jpg.rf.2dd7ffb1a00750ad07f462dad7c43401.jpg,52.7,90.19,42.36,0,BOS_ETIKET
 train,19398_Shammi-10y_Panorama_20240920174041_bmp_jpg.rf.854a9cd6daac846ceeef83b249b4db77.jpg,41.75,73.02,38.65,5,NORMAL
 train,4766_Anju-26y_Panorama_20241205135638_bmp_jpg.rf.40f295a37ad88966923fc43bab31c84c.jpg,76.71,99.56,52.49,5,NORMAL
 train,4047_Nasmin-Akther-24y_Panorama_20240529163149_bmp_jpg.rf.ff9e57c161859f166f1aa8289b168c2a.jpg,42.49,102.04,48.35,5,NORMAL
@@ -103,7 +102,6 @@ train,24864_Shuva-19y_Panorama_20241018122652_bmp_jpg.rf.39a49bc90f165aae62ddf69
 train,34833_Abdul-Hai-75y_Panorama_20240223132059_bmp_jpg.rf.e6dcfebeff1a135ba22608d8f1374e38.jpg,23.36,67.03,30.53,28,NORMAL
 train,16362_Mst-Shaki-Akther-20Y_Panorama_20250301102930_bmp_jpg.rf.ccb06859573389c7e514a21e1ce61a62.jpg,117.0,104.6,40.84,2,NORMAL
 train,16581_Anowara-70_Panorama_20240901180038_bmp_jpg.rf.1c1db2ff6f78fb45f44aa86cae7fd8d5.jpg,74.75,92.86,43.08,6,NORMAL
-train,24625_Md-Jashim-Miah-22y_Panorama_20241017095818_bmp_jpg.rf.0ef85291db0dbe1ff788f07969db0cb4.jpg,55.69,74.17,46.29,0,BOS_ETIKET
 train,22718_Md-Hannan-53y_Panorama_20241011010014_bmp_jpg.rf.78e5a889f61c95905bfa35136662540a.jpg,70.99,77.28,48.81,3,NORMAL
 train,21966_Imran-22Y_Panorama_20241006113318_bmp_jpg.rf.639c1b7cbb33be07295dba9774c15fab.jpg,68.99,103.31,55.35,2,NORMAL
 train,23716_Safiya-35y_Panorama_20241014064548_bmp_jpg.rf.e4094178f02701036ba5c10a09757064.jpg,52.83,69.29,41.98,11,NORMAL
@@ -190,14 +188,12 @@ train,28389_Sami-9y_Panorama_20250528123643_bmp_jpg.rf.071be752ace6c96b64816505c
 train,31566_Ayesha-Khatun-45y_Panorama_20240131120019_bmp_jpg.rf.b653800531b995aa116236e0bff5d1b9.jpg,116.18,102.52,58.45,30,NORMAL
 train,11777_Nipa-20y_Panorama_20240726153846_bmp_jpg.rf.d2548a1b2486672a633f1f2fee20e7dd.jpg,36.93,85.09,42.0,4,NORMAL
 train,019889_Evan-23Y_Panorama_20250401184406_bmp_jpg.rf.409b3ef42df82b230ad9601e39242131.jpg,232.75,86.58,51.63,35,NORMAL
-train,023991_Mrs-Shaful-Begum-21y_Panorama_20250426112752_bmp_jpg.rf.1b60f30810fec412ebc55f57a96746a3.jpg,71.16,63.78,36.22,0,BOS_ETIKET
 train,16449_Mubed-29Y_Panorama_20250301162922_bmp_jpg.rf.ddbd8b21ebe828c5e034d01f2898be69.jpg,181.69,85.29,54.12,7,NORMAL
 train,323_Ema-20y_Panorama_20241019221539_bmp_jpg.rf.34ad6f910c46246c8cf2b7a75892eb29.jpg,47.0,78.83,39.36,30,NORMAL
 train,35851_Mukta-32y_Panorama_20240203151755_bmp_jpg.rf.dd613e90ad6e4e8f9bae9d0c4e52964b.jpg,90.99,111.72,57.28,27,NORMAL
 train,6271_Mst-Shamsunnahar-32Y_Panorama_20241218144759_bmp_jpg.rf.d4f634162e31f20b41d90eba10291477.jpg,45.84,85.68,39.97,1,NORMAL
 train,22185_Selina-Khatun-50Y_Panorama_20241009043841_bmp_jpg.rf.871edc0b04dc59c0be4d7d9fa736efc2.jpg,74.6,109.11,50.09,2,NORMAL
 train,16635_Ala-Uddin-26y_Panorama_20240902020616_bmp_jpg.rf.e2f9d65d84629acde6c83179e0202b27.jpg,60.12,96.66,49.38,5,NORMAL
-train,24957_Ruji-Akther-28Y_Panorama_20241018222059_bmp_jpg.rf.79b54e15ff1746f1f8afdaca1aea4638.jpg,61.89,93.19,44.16,0,BOS_ETIKET
 train,31405_Shifu-Akther-37y_Panorama_20240128181652_bmp_jpg.rf.4564b8db80952bb7d5f96a51ef7758dc.jpg,26.6,71.66,36.97,32,NORMAL
 train,680_Sefa-22Y_Panorama_20241021115355_bmp_jpg.rf.f007cc8845b19ad38843eb1ec614b9f3.jpg,90.4,117.72,60.75,5,NORMAL
 train,15501_Suyeb-25Y_Panorama_20250223180649_bmp_jpg.rf.2d8c2797ecde2bfc5e4c2acfd49a087c.jpg,81.95,74.65,36.02,7,NORMAL
@@ -226,7 +222,6 @@ train,23892_Nayema-Jannat-35y_Panorama_20241015020537_bmp_jpg.rf.04888f4c1120325
 train,28876_Md-Najim-Uddin-24y_Panorama_20250602121830_bmp_jpg.rf.15c4ec1a2ec8262455fe6e9e86ed9e8e.jpg,318.44,61.23,36.72,32,NORMAL
 train,2573_Sarata-Kairi-62y_Panorama_20241027122028_bmp_jpg.rf.376eb1d7e6ce32330add17effbd1cf22.jpg,74.47,100.4,53.18,4,NORMAL
 train,23162_Tahmina-24Y_Panorama_20241012233601_bmp_jpg.rf.a614ca47a8b18730ed46c4704926bc01.jpg,38.43,75.22,39.73,2,NORMAL
-train,4889_Mst-Tasnia-Akther-17y_Panorama_20240604111318_bmp_jpg.rf.fac199b20718881daa8d8f89de66124e.jpg,25.42,67.9,35.89,0,BOS_ETIKET
 train,22652_Rabeya-19y_Panorama_20241010171723_bmp_jpg.rf.1a83358b7f9b9849dc0cdefba2488159.jpg,39.8,82.77,34.25,3,NORMAL
 train,19835_Samima-30y_Panorama_20240918195742_bmp_jpg.rf.aa125db2c91f44f2ee4cbb74d6f348dd.jpg,44.24,73.97,40.9,4,NORMAL
 train,17811_Aleya-55Y_Panorama_20240908233821_bmp_jpg.rf.bf7b589181404381a96bd17c1a9e6c4f.jpg,63.81,81.26,44.31,9,NORMAL
@@ -487,7 +482,6 @@ train,4922_Md-Shamsul-Alom-57y_Panorama_20241206130228_bmp_jpg.rf.a4f8aafce8b888
 train,28964_Liton-42y_Panorama_20250602210540_bmp_jpg.rf.efb36098a98b2f1161ed2c27c6f49318.jpg,135.99,77.34,31.1,32,NORMAL
 train,24123_Fahim-26Y_Panorama_20241016031024_bmp_jpg.rf.e9683d9a69b4efad715a81da0a924933.jpg,57.41,89.63,44.08,11,NORMAL
 train,23088_Roni-Ahmed-32Y_Panorama_20250420174231_bmp_jpg.rf.5ecdc92c73eff3fa5e5745dfcc284bda.jpg,146.19,90.92,48.67,2,NORMAL
-train,23989_Md-Al-Amin-25Y_Panorama_20241015125024_bmp_jpg.rf.08a338db9ea628c33818d2bf0abbee20.jpg,81.94,104.22,50.39,0,BOS_ETIKET
 train,22865_Mst-Shahida-20Y_Panorama_20250419123340_bmp_jpg.rf.e5892d4224e55a0e828efb5a4433b75f.jpg,160.63,103.26,50.02,9,NORMAL
 train,6494_Md-Khaladur-Rashid-Chowdhury-48y_Panorama_20240921132935_bmp_jpg.rf.bbefb3c5aa4326d5b3aa4199065b6607.jpg,61.91,77.7,47.99,7,NORMAL
 train,27442_Mst-Nahida-Yeasmin-40Y_Panorama_20250521131506_bmp_jpg.rf.d7fc066a9fe72e888452985a6499c8fa.jpg,324.76,90.38,41.12,1,NORMAL
@@ -586,7 +580,6 @@ train,18681_Afsana-38y_Panorama_20240914200536_bmp_jpg.rf.a424490948b22f739c0a5a
 train,3237_Lutfunnessa-62Y_Panorama_20240523005836_bmp_jpg.rf.728f069b30f0fff580c05cb70717ff6f.jpg,67.49,104.76,47.68,4,NORMAL
 train,3125_Tonmoy-17Y_Panorama_20241029211410_bmp_jpg.rf.750ce3cdb3503cc7a1a1fea941d2b7ab.jpg,52.57,73.03,46.03,4,NORMAL
 train,32483_Saymon-12y_Panorama_20240201222412_bmp_jpg.rf.56d3cc0c48f7ab616ae0f801bfd4a6b3.jpg,109.78,103.07,64.04,31,NORMAL
-train,3911_Tanni-21y_Panorama_20241128170756_bmp_jpg.rf.31cf921d892f770733d3f65fa99af693.jpg,47.96,91.62,43.5,0,BOS_ETIKET
 train,022965_A-Hannan-35y_Panorama_20250419181143_bmp_jpg.rf.acb5868c7f0affa3adceb0329fcbef09.jpg,185.85,102.81,45.23,8,NORMAL
 train,4023_Muktar-Miah-62y_Panorama_20241129125702_bmp_jpg.rf.3d1777ac65418cd31e7ccab60d6b83e5.jpg,76.88,102.92,50.64,4,NORMAL
 train,534_tahsan-5Y_Panorama_20241020204912_bmp_jpg.rf.999470aca94161c181ac781d24de5548.jpg,92.43,119.08,58.96,1,NORMAL
@@ -883,7 +876,6 @@ train,40925_Liza-25y_Panorama_20240412013638_bmp_jpg.rf.4aa83544f73cdd6f8e0ebca2
 train,9928_Sayed-Ali-Mir-45y_Panorama_20240710125227_bmp_jpg.rf.17e17ff34ae8ab4df0a8e5f38bc244ba.jpg,25.51,61.87,38.16,8,NORMAL
 train,21938_Taniya-20y_Panorama_20241006123318_bmp_jpg.rf.d3e060101f3a8693c728bd5f39bcbeb7.jpg,53.0,74.8,47.01,2,NORMAL
 train,2953_Munia-24y_Panorama_20240519173635_bmp_jpg.rf.4f4040728bd16d1a3d161b37cbcd6ba3.jpg,50.56,86.21,45.81,2,NORMAL
-train,1748_Mahmud-20y_Panorama_20241024215956_bmp_jpg.rf.3cdfeaf069b0e5caf6ea7b2be65adfab.jpg,47.88,77.67,48.29,0,BOS_ETIKET
 train,5590_Sharmin-40y_Panorama_20241212131304_bmp_jpg.rf.fae42c0baa5318c6f21922df6da4c890.jpg,80.04,96.09,57.1,6,NORMAL
 train,14363_Omor-Faruq-25y_Panorama_20250216140457_bmp_jpg.rf.f750481de642139823e274aca0dcf6f1.jpg,80.65,77.94,37.76,5,NORMAL
 train,020890_Subel-Miah-30Y_Panorama_20250407151321_bmp_jpg.rf.9e7b1f03d065115a455d2d9e66eea27c.jpg,154.18,80.63,44.37,8,NORMAL
@@ -955,7 +947,6 @@ train,24001_Mahmudul-Hasan-35y_Panorama_20241015155025_bmp_jpg.rf.0311d6b8ecd75c
 train,23794_Rubi-28y_Panorama_20241014171728_bmp_jpg.rf.97e7efeeeec92a156ad55e0f3914b466.jpg,87.03,97.92,55.63,1,NORMAL
 train,5175_Tufajjol-13y_Panorama_20241207173524_bmp_jpg.rf.8db9709dbaa975d554f407ea9f244b2d.jpg,120.82,125.17,67.09,13,NORMAL
 train,10556_Fahima-Akther-23y_Panorama_20240713120530_bmp_jpg.rf.f893b37e5d1a12b25e25f49659aeaea4.jpg,61.59,105.49,49.89,3,NORMAL
-train,24367_Samiur-12Y_Panorama_20250429123833_bmp_jpg.rf.5829a35294c9fb853cffb4872ac1ac57.jpg,210.98,82.18,46.17,0,BOS_ETIKET
 train,24900_Shahida-29Y_Panorama_20241018160545_bmp_jpg.rf.ca4f4b3db9718b95783a03f7b368131a.jpg,39.93,63.03,42.13,1,NORMAL
 train,19111_Sayeed-Mofti-21y_Panorama_20240916192528_bmp_jpg.rf.a7eb050de50aa07c7af9a55a2974f029.jpg,52.92,92.36,42.15,5,NORMAL
 train,18615_Mst-Nisfa-Akther-24Y_Panorama_20240914152401_bmp_jpg.rf.f558cd3d7b370386ecdcb621898e0a15.jpg,82.11,123.11,57.2,32,NORMAL
@@ -985,7 +976,6 @@ train,19820_Ruma-Akther-28y_Panorama_20240918163821_bmp_jpg.rf.2b686d592fadb985b
 train,19544_Saleha-36y_Panorama_20240917094757_bmp_jpg.rf.124e07e0d580a7325b02db65ae450873.jpg,40.11,68.02,40.76,6,NORMAL
 train,22811_Rimon-22y_Panorama_20241011133528_bmp_jpg.rf.1ae7568628f84eb06ea0f8753ea7dd04.jpg,84.31,126.9,54.66,13,NORMAL
 train,29808_Md-Miraj-Talukder-22y_Panorama_20250612111602_bmp_jpg.rf.2410749a101c50c13d0c0b65fcf79585.jpg,395.55,87.28,38.93,32,NORMAL
-train,3548_Numan-Ahmed-26y_Panorama_20241124193335_bmp_jpg.rf.4da383246435858dede9cbcbe6ff579c.jpg,39.81,68.89,34.67,0,BOS_ETIKET
 train,29448_Md-Khorsed-Alam-52y_Panorama_20250612125839_bmp_jpg.rf.20b654b1fbf422c80bbbf18db9780b95.jpg,220.76,68.84,29.08,31,NORMAL
 train,7236_Faruk-32y_Panorama_20241226160152_bmp_jpg.rf.dc5b539db63d266016f9624540ee8a48.jpg,44.19,70.55,38.37,10,NORMAL
 train,21604_Nilufa-55Y_Panorama_20250411175900_bmp_jpg.rf.f2ca579c18c0ca1f624df4140f5f365d.jpg,133.69,93.78,43.12,10,NORMAL
@@ -1017,7 +1007,6 @@ train,20517_Tarif-Ahmed-24y_Panorama_20240920164515_bmp_jpg.rf.08e1f0df9fb6bd718
 train,27304_Susmita-Rani-21Y_Panorama_20250519134909_bmp_jpg.rf.7f5354d8aa0fdd2914336a8a6e0e5e11.jpg,232.2,90.84,41.76,6,NORMAL
 train,9942_Nargish-Akther-43y_Panorama_20240710140259_bmp_jpg.rf.5df91c34f4240c12e27c0a3f52ec0389.jpg,60.22,110.09,54.64,2,NORMAL
 train,5263_Kawsar-29y_Panorama_20241208141310_bmp_jpg.rf.92025f1596f4c0df918e5bc917e4d229.jpg,76.23,101.75,58.06,8,NORMAL
-train,3718_Odiptha-15Y_Panorama_20240525133618_bmp_jpg.rf.dc192c4744ab693dd1123f0caa337679.jpg,55.34,96.1,47.31,0,BOS_ETIKET
 train,38413_Tiham-8y_Panorama_20240216061150_bmp_jpg.rf.2f63a5c29f1638f4264a5f8a19a5b2dc.jpg,60.05,88.59,43.26,1,NORMAL
 train,23357_Rina-Akther-37y_Panorama_20241013043929_bmp_jpg.rf.085adccf8ab1bd8f447f0db7bb602db2.jpg,73.95,111.8,51.04,3,NORMAL
 train,22621_Jusna-18y_Panorama_20241010135029_bmp_jpg.rf.2c0e63b490e0cf039a084508bc469282.jpg,44.55,94.24,39.96,4,NORMAL
@@ -1059,7 +1048,6 @@ train,999990_Tahera-39y_Panorama_20240902234807_bmp_jpg.rf.d4a7f885c1c5416f25797
 train,31351_Nurjahan-45y_Panorama_20240128121514_bmp_jpg.rf.393168da77e5d7f5227f823f2678d189.jpg,60.13,100.74,59.77,32,NORMAL
 train,016523_Aminul-Islam-30y_Panorama_20250302131634_bmp_jpg.rf.b33d31d2b36cc7798b43305df2cfbc79.jpg,231.62,114.78,51.25,12,NORMAL
 train,4005_Rahim-3y_Panorama_20241129133034_bmp_jpg.rf.efb059887fe40bc4944884535f867eac.jpg,71.45,126.16,49.39,1,NORMAL
-train,6339_Ruma-22Y_Panorama_20241219131008_bmp_jpg.rf.84ae21a1d901c2abc73f4473b969f3a2.jpg,69.57,94.24,49.57,0,BOS_ETIKET
 train,28501_Mujibur-Rahman-56Y_Panorama_20250529171328_bmp_jpg.rf.af7d3eb0bac737eeff8695eff609c8e9.jpg,351.16,92.05,43.01,26,NORMAL
 train,16588_Ayesha-48y_Panorama_20240901183936_bmp_jpg.rf.846ee8790d2558116cc3255081d05d63.jpg,57.11,86.74,43.34,4,NORMAL
 train,16816_Han-Jala-24Y_Panorama_20240902230321_bmp_jpg.rf.23721e6eb752d7ff7fe5c5f898b1c93f.jpg,52.93,95.03,52.88,4,NORMAL
@@ -1187,14 +1175,11 @@ valid,3019_Dulon-Akther-26Y_Panorama_20241029121320_bmp_jpg.rf.2efe1c8476c2e2b11
 valid,26230_Bachchu-Miah-28y_Panorama_20250510134227_bmp_jpg.rf.db2827d36309ca940e94f667ac511902.jpg,115.51,95.07,41.68,4,NORMAL
 valid,22931_Juwel-48Y_Panorama_20250419170901_bmp_jpg.rf.0c5dec38a8481edf6c5d0e3084a7f348.jpg,191.44,96.03,46.37,8,NORMAL
 valid,32339_Mst-Meherunnessa-55y_Panorama_20240201071509_bmp_jpg.rf.c789be3a7d7b7df3d7330ff72ba3b11d.jpg,137.6,121.63,70.42,31,NORMAL
-valid,6244_Rohima-50Y_Panorama_20241218123933_bmp_jpg.rf.7a91025896fe7b8bd506f825be3e1ba1.jpg,76.4,107.71,46.18,0,BOS_ETIKET
 valid,31526_45y-Abdul-Hekim_Panorama_20240130143215_bmp_jpg.rf.8d9be863d16bd5a5c3a9ccb95516b877.jpg,87.42,103.16,53.66,27,NORMAL
 valid,28901_Shahena-Akther-30Y_Panorama_20250602140724_bmp_jpg.rf.6f2440712be3bb9330565cc3595a6679.jpg,539.3,90.47,46.05,34,NORMAL
 valid,22969_Basona-Rani-Paul-60y_Panorama_20250419182319_bmp_jpg.rf.3301c53e62c262d67e3914f88fc4c723.jpg,184.86,117.54,49.68,4,NORMAL
-valid,3868_Toufiqul-Islam-36Y_Panorama_20240526052718_bmp_jpg.rf.8c597b44f6b5e27e465a2407f6e36229.jpg,56.98,107.88,48.13,0,BOS_ETIKET
 valid,22701_Ruhan-Ahmed-18y_Panorama_20241011002435_bmp_jpg.rf.f5ca7532b9eabf69fc6fe660f3a4d3c0.jpg,51.69,80.62,43.14,2,NORMAL
 valid,21879_Mst-Lutfunnessa-62y_Panorama_20241006054010_bmp_jpg.rf.d3e3beb5aa647d3f31d914af7e43fa94.jpg,55.35,79.29,44.8,6,NORMAL
-valid,489_Bisal-Deb-Nath-8y_Panorama_20241020142708_bmp_jpg.rf.581d8ccb1f9b9d10518b5ea5433e2b3d.jpg,62.49,84.79,48.65,0,BOS_ETIKET
 valid,10779_Lipi-40y_Panorama_20250121161546_bmp_jpg.rf.259651b4244c7452b80d52a53c63d6c7.jpg,70.89,77.16,44.32,16,NORMAL
 valid,22938_Zeet-14Y_Panorama_20241012010232_bmp_jpg.rf.e0f8e49d902c4beec3950960985f4c8f.jpg,67.44,109.33,46.75,1,NORMAL
 valid,017715_Hazera-Khatun-60Y_Panorama_20250312160411_bmp_jpg.rf.e20b8eeff2840710266239e4f8be9246.jpg,146.28,100.76,44.59,8,NORMAL
@@ -1230,7 +1215,6 @@ valid,14588_Mir-Sabuj-45Y_Panorama_20240817131317_bmp_jpg.rf.0880468393464af4785
 valid,19922_Khairunnessa-50y_Panorama_20240919043629_bmp_jpg.rf.87ac11e18d51a1541fc6efca3f8b1087.jpg,70.14,114.58,45.08,3,NORMAL
 valid,23022_Mashuk-Ahmed-38y_Panorama_20241012112947_bmp_jpg.rf.0484672faf81fc4b07dd562470561a7a.jpg,69.72,95.87,48.98,2,NORMAL
 valid,2941_Fahima-Akther-37Y_Panorama_20241029025320_bmp_jpg.rf.0764c0fa0118dbac14e39bc1932c9072.jpg,110.4,103.81,60.49,11,NORMAL
-valid,5482_Sajim-17y_Panorama_20241210180703_bmp_jpg.rf.2b84c657a5dad191069d4f8d2a7d1f67.jpg,59.13,90.29,49.43,0,BOS_ETIKET
 valid,04785_Mst-Parvin-Akther-23Y_Panorama_20241205165145_bmp_jpg.rf.a3363823583c84f116571e0019255dee.jpg,67.06,90.5,50.21,5,NORMAL
 valid,34383_Abdul-Kadir-35y_Panorama_20240221040206_bmp_jpg.rf.152dd12f036aac8d4380ee7dbeadd11a.jpg,23.13,56.32,31.47,32,NORMAL
 valid,37141_Arpa-15y_Panorama_20240210170230_bmp_jpg.rf.62957b4d2fccde356df3545041840dea.jpg,25.46,61.61,33.38,32,NORMAL
@@ -1258,7 +1242,6 @@ valid,2637_Mst-Razia-Sultana-40y_Panorama_20241027164646_bmp_jpg.rf.3ee2950cfefa
 valid,4726_Sabina-10Y_Panorama_20241205110758_bmp_jpg.rf.fb241ded6baedbdc97612c299294922b.jpg,93.77,120.53,58.43,5,NORMAL
 valid,21079_Sumon-Sen-Gupta-32y_Panorama_20240922210052_bmp_jpg.rf.1b2c2896d99738b168c5c52cde076094.jpg,53.07,77.73,41.9,4,NORMAL
 valid,35368_Md-Rayhan-Miah-17y_Panorama_20240228124415_bmp_jpg.rf.58a1c08715fe1a90e9e493d93fa02de3.jpg,67.55,117.71,51.51,4,NORMAL
-valid,23040_Mukther-28y_Panorama_20241012130927_bmp_jpg.rf.ad2b88ea392ff3610bf90668650e0da0.jpg,47.47,85.64,36.68,0,BOS_ETIKET
 valid,22014_Makhon-Gusami-44Y_Panorama_20241008115709_bmp_jpg.rf.4c73c302e0ea3b49ba855d6646b64c5c.jpg,71.26,97.96,43.76,3,NORMAL
 valid,3127_Md-Khairul-Islam-32y_Panorama_20241029212632_bmp_jpg.rf.64ab0574e6297b2f1c0e94b19c35b74f.jpg,46.43,60.75,40.06,1,NORMAL
 valid,28908_Mrs-Rekha-Akther-27Y_Panorama_20250602151041_bmp_jpg.rf.58fc74ce1203a48e07095411e83dae15.jpg,493.25,99.66,52.24,29,NORMAL
@@ -1318,7 +1301,6 @@ valid,23662_Sultana-Akther-17y_Panorama_20241014041945_bmp_jpg.rf.d79b874a55b273
 valid,36290_Lima-15y_Panorama_20240205063626_bmp_jpg.rf.a4c45225ee670923246c16a2b169e75c.jpg,81.54,90.83,59.22,28,NORMAL
 valid,18255_Jahanara-60Y_Panorama_20240913133238_bmp_jpg.rf.ae66b394ce1f5465754c957aa12b81e6.jpg,91.39,121.32,61.93,32,NORMAL
 valid,23267_Nondita-Paul-20y_Panorama_20241013010126_bmp_jpg.rf.88932e78f953ce854b107c5ecc270520.jpg,49.6,112.94,43.18,2,NORMAL
-valid,2993_Habibur-Rahman-26Y_Panorama_20241029090518_bmp_jpg.rf.0188f9db3ed28afb20401364f3f4ea6b.jpg,73.84,121.09,50.81,0,BOS_ETIKET
 valid,22233_Md-Noore-Alam-21Y_Panorama_20250416115049_bmp_jpg.rf.ae0db0a648d1fae992c34a6e8343abd2.jpg,151.1,105.21,45.24,4,NORMAL
 valid,5396_Ramjan-Ali-24y_Panorama_20240430045223_bmp_jpg.rf.dc503fa9485d6a8921d34934d3ebf5bf.jpg,28.65,66.34,40.13,2,NORMAL
 valid,15514_Mongol-Urang-59Y_Panorama_20240825002342_bmp_jpg.rf.651346b5bad51248006117caee2a6dbe.jpg,50.42,81.6,38.22,5,NORMAL
@@ -1351,10 +1333,8 @@ valid,22882_Mrs-Halima-Khatun-40Y_Panorama_20250419131647_bmp_jpg.rf.c3cfac229a1
 valid,1730_Dulon-Akther-24y_Panorama_20240512050956_bmp_jpg.rf.9feae145fbb9afe84d2b6fc866d03229.jpg,55.23,59.61,38.92,1,NORMAL
 valid,23027_Tahmina-Akther-23y_Panorama_20241012115305_bmp_jpg.rf.f42054fcef14acc95c31049ffe2434a3.jpg,33.86,66.25,38.28,4,NORMAL
 valid,15428_Rimi-23y_Panorama_20250223123031_bmp_jpg.rf.674317765621a6b9ad329b33ede43878.jpg,81.9,75.9,36.98,1,NORMAL
-valid,27677_Md-Emran-Miah-20y_Panorama_20250523132507_bmp_jpg.rf.80a24084ef0430f2f08c39375975dc3b.jpg,505.69,126.48,42.08,0,BOS_ETIKET
 valid,34465_Rokeya-24y_Panorama_20240222170052_bmp_jpg.rf.adcf6d665dafa40760490735ba3884f0.jpg,23.66,60.18,30.82,37,NORMAL
 valid,18024_Jamal-Miah-43Y_Panorama_20240909232817_bmp_jpg.rf.667cbb813051f776db388a4a44d35b9f.jpg,68.46,83.88,48.33,8,NORMAL
-valid,7012_Shamoly-Rani-42Y_Panorama_20241224152230_bmp_jpg.rf.4ac7fcf04800bc59c55450716df1c6e1.jpg,65.63,87.16,46.52,0,BOS_ETIKET
 valid,23043_Niha-8Y_Panorama_20241012135618_bmp_jpg.rf.57c25046647fc62229d1ededb3a96eda.jpg,74.78,112.43,47.21,1,NORMAL
 valid,23963_Shipon-Akther-30y_Panorama_20241015104020_bmp_jpg.rf.67089f9ade60b53503c3e832b96ad063.jpg,56.84,84.74,42.96,1,NORMAL
 valid,19977_Foysal-22y_Panorama_20240919144849_bmp_jpg.rf.c5d8310edf9e2c28e64327a20bb5acc5.jpg,50.13,93.39,46.46,4,NORMAL
@@ -1400,7 +1380,6 @@ test,3933_Nayeem-24y_Panorama_20241128174524_bmp_jpg.rf.0416663fe5fdf4c5b030c7a6
 test,32547_Mst-Lucky-22y_Panorama_20240202043623_bmp_jpg.rf.33fe68fa3b726061947417827ffff32e.jpg,35.25,59.2,37.2,33,NORMAL
 test,25513_Mst-Kairunnessa-65y_Panorama_20250506154125_bmp_jpg.rf.5bd03b51e587e4d5dac4ab2f05ac2a80.jpg,194.43,114.11,47.49,20,NORMAL
 test,359_Hena-akther-30y_Panorama_20241020013537_bmp_jpg.rf.8736120b1c13997da2c332de62a1e086.jpg,72.22,96.36,50.42,12,NORMAL
-test,23441_Mizanur-Rahman-25Y_Panorama_20250423182313_bmp_jpg.rf.88890989d0ea46a3a530ca616e70748a.jpg,312.29,123.19,53.81,0,BOS_ETIKET
 test,28388_Parvez-Mia-26y_Panorama_20250528123018_bmp_jpg.rf.f52a0e2764c6878eed8180a75b0d890f.jpg,226.06,62.05,31.0,33,NORMAL
 test,19518_Tonny-18Y_Panorama_20240917082750_bmp_jpg.rf.e437d81f2c5248e60fadae93d03d932e.jpg,68.78,95.24,47.0,1,NORMAL
 test,23125_Ruma-27Y_Panorama_20250421114524_bmp_jpg.rf.80fb015d9795b50996b87da5fc8a68c7.jpg,134.55,94.81,42.8,3,NORMAL
@@ -1510,7 +1489,6 @@ test,436_Shila-Chowdhury-28y_Panorama_20241020100814_bmp_jpg.rf.1024979cae22ff50
 test,4043_Jusna-Akther-23y_Panorama_20240529143605_bmp_jpg.rf.d0ef1b1767769e814de05aa6c37ac2e7.jpg,97.37,122.38,58.78,3,NORMAL
 test,021123_Md-Kamal-Miah-32y_Panorama_20250409144442_bmp_jpg.rf.721170faf8e4e9c9ceea7df3f65c4684.jpg,213.15,117.87,53.44,6,NORMAL
 test,28677_Habiba-45Y_Panorama_20250530190407_bmp_jpg.rf.8141361c60e63f92a03e54177800bc7a.jpg,260.83,76.63,38.76,31,NORMAL
-test,4348_Humaira-6Y_Panorama_20241201103435_bmp_jpg.rf.f8f56a84c73cb6466cee6ed426bc5460.jpg,93.7,121.82,53.08,0,BOS_ETIKET
 test,17598_Md-Sohid-Miah-30Y_Panorama_20240908030300_bmp_jpg.rf.56b2c2b6040e8851e9178ba8a1fc5c9d.jpg,66.39,97.63,51.48,9,NORMAL
 test,01730_Sheful-Akther-38y_Panorama_20241024205433_bmp_jpg.rf.5b9b90ea3a1225dbbb6e094151d265ba.jpg,55.21,84.59,42.06,1,NORMAL
 test,23639_Khairunnessa-30Y_Panorama_20241014013620_bmp_jpg.rf.4b1cd9a94b0afb47c764e0f385d18f8f.jpg,58.81,96.38,43.05,1,NORMAL
