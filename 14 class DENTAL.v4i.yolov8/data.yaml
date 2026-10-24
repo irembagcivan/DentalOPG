@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 14
+names: ['BDR', 'Bridge', 'Cap', 'Caries', 'Distoangular impaction', 'Filling', 'Horizontal Impaction', 'Missing Teeth', 'Mixed Dentition', 'Normal Teeth', 'Periodontitis', 'Rootcanal', 'Unerupted Wisdom Teeth', 'Apical abscess']
+
+roboflow:
+  workspace: labonis-workspace
+  project: dental-cjk1c
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/labonis-workspace/dental-cjk1c/dataset/4

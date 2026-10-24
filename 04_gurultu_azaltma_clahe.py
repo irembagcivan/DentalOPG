@@ -1,55 +1,35 @@
+''' 
+Bu script 1525 görüntünün tamamına üç işlemi sırayla uyguladı:
+
+1) Bilateral filtre (gürültü azaltma) — röntgenlerdeki pikselsel gürültüyü (sensör kaynaklı “kum” görünümü) azaltır, 
+ama diş/kemik kenarlarını bulanıklaştırmaz (kenar-koruyucu bir filtredir, bu yüzden tercih edilmiş).
+
+2) CLAHE (Contrast Limited Adaptive Histogram Equalization) — görüntünün farklı bölgelerindeki kontrastı yerel olarak artırır. 
+Panoramik röntgenlerde bazı bölgeler çok açık, bazıları çok koyu çıkabiliyor;
+CLAHE her bölgeyi kendi içinde daha ayırt edilebilir hale getiriyor (diş-kemik sınırları, çürük gölgeleri daha belirgin oluyor).
+
+3) Unsharp mask (hafif keskinleştirme) — önceki iki adımda biraz yumuşayan ince detayları (kök çizgileri, dolgu kenarları) geri toparlıyor.'''
+
+
 import random
 import shutil
-from pathlib import Path
 
 import cv2
 import numpy as np
 
-# ---------------- Ayarlar ----------------
-VERI_SETI_DIZINI = Path("/Users/irembagcivan/Desktop/DentalOPG/14 class DENTAL.v4i.yolov8")
-# Çıktı ayrı bir veri seti klasörüne yazılır: <ad>_preprocessed/{train,valid,test}/{images,labels}
-CIKTI_DIZINI = VERI_SETI_DIZINI.with_name(VERI_SETI_DIZINI.name + "_preprocessed")
-KUMELER = ["train", "valid", "test"]
-GORUNTU_UZANTILARI = {".jpg", ".jpeg", ".png", ".bmp"}
-
-# Gürültü azaltma (ince diş/kök detayını korumak için hafif tutuldu)
-BILATERAL_D = 5
-BILATERAL_SIGMA_COLOR = 25
-BILATERAL_SIGMA_SPACE = 25
-
-# CLAHE
-CLAHE_CLIP_LIMIT = 2.0
-CLAHE_TILE_GRID = (8, 8)
+from config import VERI_SETI_DIZINI, CIKTI_DIZINI, ALT_KUMELER, GORUNTU_UZANTILARI
+from on_isleme import goruntu_on_isle, URETIM_AYARLARI
 
 KARSILASTIRMA_ORNEK_SAYISI = 4
 
 
 # ---------------- 1. Ön işleme ----------------
-def goruntu_on_isle(img_gri, clahe):
-    """Gri görüntüye önce gürültü azaltma, sonra CLAHE ve hafif keskinleştirme uygular."""
-    filtreli = cv2.bilateralFilter(
-        img_gri,
-        d=BILATERAL_D,
-        sigmaColor=BILATERAL_SIGMA_COLOR,
-        sigmaSpace=BILATERAL_SIGMA_SPACE,
-    )
-    
-    kontrastli = clahe.apply(filtreli)
-    
-    # Unsharp Masking (Keskinleştirme) eklendi
-    gauss_bulanik = cv2.GaussianBlur(kontrastli, (0, 0), sigmaX=1.0)
-    keskinlestirilmis = cv2.addWeighted(kontrastli, 1.3, gauss_bulanik, -0.3, 0)
-    
-    return keskinlestirilmis
-
-
 def goruntulere_on_isleme_uygula(veri_seti_dizini, cikti_dizini):
     print("GÖRÜNTÜLERE GÜRÜLTÜ AZALTMA, CLAHE VE KESKİNLEŞTİRME UYGULANIYOR...")
-    clahe = cv2.createCLAHE(clipLimit=CLAHE_CLIP_LIMIT, tileGridSize=CLAHE_TILE_GRID)
     cift_listesi = []
     okunamayan = 0
 
-    for kume in KUMELER:
+    for kume in ALT_KUMELER:
         orijinal_dizin = veri_seti_dizini / kume / "images"
         if not orijinal_dizin.exists():
             print(f"   Uyarı: {kume}/images bulunamadı, atlandı.")
@@ -70,7 +50,7 @@ def goruntulere_on_isleme_uygula(veri_seti_dizini, cikti_dizini):
                 okunamayan += 1
                 continue
 
-            iyilestirilmis = goruntu_on_isle(img, clahe)
+            iyilestirilmis = goruntu_on_isle(img, **URETIM_AYARLARI)
 
             # 3 kanallı formata çevir (SAM ve YOLO için uyumlu)
             sonuc_bgr = cv2.cvtColor(iyilestirilmis, cv2.COLOR_GRAY2BGR)

@@ -4,10 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 import yaml
-
-VERI_SETI_DIZINI = Path("/Users/irembagcivan/Desktop/DentalOPG/14 class DENTAL.v4i.yolov8")
-ALT_KUMELER = ["train", "valid", "test"]
-GORUNTU_UZANTILARI = {".jpg", ".jpeg", ".png", ".bmp"}
+from config import VERI_SETI_DIZINI, ALT_KUMELER, GORUNTU_UZANTILARI
 
 def sinif_isimlerini_yukle(yaml_yolu):
     if yaml_yolu.exists():

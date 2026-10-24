@@ -1,31 +1,21 @@
-'''Aşağıdaki betik; train, valid ve test klasörlerini tarayarak görüntü-etiket eşleşmelerini kontrol eder, 
-her bir .txt dosyasını hem dosya bazında hem de satır (nesne) bazında analiz ederek kaç tanesinin sadece Bounding Box, 
+'''Aşağıdaki betik; train, valid ve test klasörlerini tarayarak görüntü-etiket eşleşmelerini kontrol eder,
+her bir .txt dosyasını hem dosya bazında hem de satır (nesne) bazında analiz ederek kaç tanesinin sadece Bounding Box,
 sadece Poligon, Karışık (Mixed) veya Boş olduğunu raporlar'''
 
-from pathlib import Path
-import yaml
 import pandas as pd
 
-VERI_SETI_DIZINI = Path("/Users/irembagcivan/Desktop/DentalOPG/14 class DENTAL.v4i.yolov8")
-ALT_KUMELER = ["train", "valid", "test"]
-GORUNTU_UZANTILARI = {".jpg", ".jpeg", ".png", ".bmp"}
+from config import VERI_SETI_DIZINI, ALT_KUMELER, GORUNTU_UZANTILARI
+from utils import sinif_isimlerini_yukle
 
-def sinif_isimlerini_yukle(yaml_yolu):
-    """data.yaml dosyasından sınıf isimlerini okur."""
-    if yaml_yolu.exists():
-        with open(yaml_yolu, "r", encoding="utf-8") as dosya:
-            veri = yaml.safe_load(dosya)
-            return veri.get("names", [])
-    return []
 
 def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
     """Görüntü-etiket eşleşmesini ve etiket formatlarını (Kutu vs. Poligon) analiz eder."""
     sinif_isimleri = sinif_isimlerini_yukle(veri_seti_dizini / "data.yaml")
     ozet_kayitlar = []
-    
+
     # Sınıf bazlı istatistik sözlüğü
     sinif_istatistikleri = {
-        i: {"sinirlayici_kutu": 0, "poligon": 0} 
+        i: {"sinirlayici_kutu": 0, "poligon": 0}
         for i in range(len(sinif_isimleri) or 20)
     }
 
@@ -39,11 +29,11 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
 
         # Dosya isimlerini uzantısız (stem) olarak sözlükte toplama
         goruntu_dosyalari = {
-            p.stem: p for p in goruntu_dizini.iterdir() 
+            p.stem: p for p in goruntu_dizini.iterdir()
             if p.suffix.lower() in GORUNTU_UZANTILARI
         }
         etiket_dosyalari = {
-            p.stem: p for p in etiket_dizini.iterdir() 
+            p.stem: p for p in etiket_dizini.iterdir()
             if p.suffix.lower() == ".txt"
         }
 
@@ -64,6 +54,7 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
         # Satır (nesne/etiket) bazlı sayaçlar
         toplam_kutu_nesnesi = 0
         toplam_poligon_nesnesi = 0
+        bozuk_satir_sayisi = 0
 
         for dosya_adi in eslesen_isimler:
             etiket_yolu = etiket_dosyalari[dosya_adi]
@@ -81,8 +72,18 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
 
             for satir in satirlar:
                 parcalar = satir.split()
-                sinif_id = int(parcalar[0])
-                koordinat_sayisi = len(parcalar) - 1
+
+                # Satır, sınıf ID'si ve sayısal koordinatlardan oluşmuyorsa
+                # (örn. bozuk/eksik yazılmış bir satırsa) script'i çökertmeden atla.
+                try:
+                    sinif_id = int(parcalar[0])
+                    koordinat_sayisi = len(parcalar) - 1
+                    [float(x) for x in parcalar[1:]]  # sayısal olduğunu doğrula
+                except (ValueError, IndexError):
+                    hata_var_mi = True
+                    bozuk_satir_sayisi += 1
+                    print(f"[UYARI] Bozuk satır atlandı -> {etiket_yolu.name}: '{satir}'")
+                    continue
 
                 # YOLOv8 Sınırlayıcı Kutu: sinif_id + 4 koordinat (merkez_x, merkez_y, genislik, yukseklik)
                 if koordinat_sayisi == 4:
@@ -90,7 +91,7 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
                     toplam_kutu_nesnesi += 1
                     if sinif_id in sinif_istatistikleri:
                         sinif_istatistikleri[sinif_id]["sinirlayici_kutu"] += 1
-                
+
                 # YOLOv8 Poligon: sinif_id + en az 3 köşe noktası (6 koordinat ve çift sayı)
                 elif koordinat_sayisi >= 6 and koordinat_sayisi % 2 == 0:
                     poligon_var_mi = True
@@ -121,6 +122,7 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
             "Sadece Poligon (Dosya)": sadece_poligon_dosya_sayisi,
             "Karışık Format (Dosya)": karisik_dosya_sayisi,
             "Bozuk Format (Dosya)": bozuk_dosya_sayisi,
+            "Bozuk Satır Sayısı": bozuk_satir_sayisi,
             "Toplam Kutu Nesnesi": toplam_kutu_nesnesi,
             "Toplam Poligon Nesnesi": toplam_poligon_nesnesi
         })
@@ -141,6 +143,7 @@ def veri_setini_analiz_et(veri_seti_dizini, alt_kumeler):
             })
         sinif_tablosu = pd.DataFrame(sinif_kayitlari)
         print(sinif_tablosu.to_string(index=False))
+
 
 if __name__ == "__main__":
     veri_setini_analiz_et(VERI_SETI_DIZINI, ALT_KUMELER)
